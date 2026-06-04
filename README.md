@@ -31,8 +31,10 @@ El objetivo es identificar perfiles de comportamiento sectorial: qué sectores p
 | IPI Manufacturero (`sh_ipi_manufacturero_2026.xls`) | INDEC | Ene 2016 – Mar 2026 | Mensual |
 | UCII (`sh_capacidad_04_26.xls`) | INDEC | Ene 2017 – Feb 2026 | Mensual |
 | Complejos exportadores (`complejos_exportadores_serie_2002_2025.xlsx`) | INDEC / ICA | 2002 – 2025 | Anual |
+| Exportaciones por categoría ICA (`exportaciones-mensual.csv`) | INDEC (ICA) | Ene 1992 – Abr 2026 | Mensual |
+| Exportaciones por rama de actividad (`total_expo_total_empresas_por_clae3.csv`) | INDEC / datos.gob.ar | Ene 2007 – Nov 2023 | Mensual (CLAE3) |
 
-Los tres datasets son de acceso público. El IPI usa base 2004 = 100. La UCII se expresa en porcentaje; su complemento (100 − UCII) representa la capacidad ociosa. Las exportaciones están en millones de USD FOB.
+Todos los datasets son de acceso público. El IPI usa base 2004 = 100. La UCII se expresa en porcentaje; su complemento (100 − UCII) representa la capacidad ociosa. Las exportaciones están en millones de USD FOB.
 
 ---
 
@@ -65,6 +67,9 @@ Se procesaron los dos datasets principales en Power Query: se resolvió el encab
 
 **Visualizaciones**  
 Se desarrollaron en Power BI: scatter de posicionamiento sectorial (IPI vs UCII), gráfico de barras apiladas de capacidad utilizada vs ociosa, y líneas de evolución temporal por sector.
+
+**Consolidación y cierre (Sprint 3)**  
+Se consolidan los insights y las visualizaciones en el dashboard final de Power BI, se redacta el informe técnico final y se deja el repositorio actualizado con la estructura definitiva: datasets, modelo `.pbix`, documentación y entregables de los tres sprints.
 
 ---
 
@@ -101,14 +106,21 @@ El Sprint 3 avanzará hacia una segmentación más formal de estos perfiles.
 ```
 ├── README.md
 ├── data/
-│   ├── raw/          ← datasets originales descargados del INDEC
-│   └── processed/    ← datos transformados exportados desde Power Query
+│   ├── raw/              ← datasets originales (INDEC: IPI, UCII, exportaciones)
+│   └── processed/        ← datos transformados exportados desde Power Query
 ├── analysis/
-│   └── pbix/         ← archivo(s) .pbix con el modelo y las visualizaciones
+│   └── pbix/             ← archivos .pbix con el modelo y las visualizaciones
 ├── docs/
-│   ├── capturas/     ← imágenes de los gráficos
-│   └── ...           ← diccionario de datos, fichas técnicas, minutas
-└── reports/          ← informes técnicos y entregables por sprint
+│   ├── capturas/         ← imágenes de los gráficos
+│   ├── etl/              ← controles de limpieza y registro de errores
+│   ├── organizacion/     ← gantt, roles y minutas por sprint
+│   ├── Diccionario de Datos.docx
+│   ├── PP1-PLA-S1-DiccionarioDatos Equipo 3.xlsx   ← diccionario de datos final
+│   └── Criterios para la NORMALIZACIÓN DE INDUSTRIAS POR SECTOR.xlsx
+└── reports/             ← informes técnicos y entregables por sprint
+    ├── sprint_1/
+    ├── sprint_2/
+    └── sprint_3/
 ```
 
 > Los archivos de mayor tamaño (.pbix, .xls) se mantienen también en Google Drive como respaldo principal.
