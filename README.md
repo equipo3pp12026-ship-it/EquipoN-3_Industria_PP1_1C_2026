@@ -1,5 +1,5 @@
-# Eficiencia productiva y capacidad ociosa en la industria manufacturera argentina
-### Identificación de perfiles sectoriales 2021–2026
+# Inteligencia de Datos para la Reconfiguración Industrial Argentina
+### Eficiencia productiva y perfiles sectoriales en la industria manufacturera · 2021–2026
 
 Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial  
 Politécnico Malvinas Argentinas — Práctica Profesionalizante I · 1C 2026
@@ -18,9 +18,9 @@ Politécnico Malvinas Argentinas — Práctica Profesionalizante I · 1C 2026
 
 ## Descripción del proyecto
 
-La industria manufacturera argentina no es homogénea: algunos sectores operan cerca de su capacidad máxima mientras otros tienen más del 40% de su infraestructura sin usar. Este proyecto analiza esa brecha a partir de dos indicadores oficiales del INDEC —el Índice de Producción Industrial (IPI) y la Utilización de la Capacidad Instalada Industrial (UCII)— para el período 2021–2026.
+La industria manufacturera argentina atraviesa una reconfiguración estructural posterior a la pandemia, marcada por una fuerte heterogeneidad: algunos sectores operan cerca de su capacidad máxima mientras otros tienen más del 40% de su infraestructura sin usar. Este proyecto aplica inteligencia de datos sobre registros oficiales del INDEC —el Índice de Producción Industrial (IPI) y la Utilización de la Capacidad Instalada Industrial (UCII)— para diagnosticar esa heterogeneidad en el período 2021–2026 y aportar evidencia empírica para la reconfiguración del sector.
 
-El objetivo es identificar perfiles de comportamiento sectorial: qué sectores producen mucho y usan bien su capacidad, cuáles tienen alta ocupación pero baja producción, y cuáles están rezagados en ambas dimensiones. Como complemento, se incorpora el dataset de exportaciones por complejo industrial para validar si los sectores más eficientes también son los más orientados al mercado externo.
+El objetivo es identificar y caracterizar perfiles de eficiencia sectorial cruzando producción (IPI), uso de capacidad (UCII) y exportaciones. Del análisis emergen tres perfiles: un bloque motor de alta producción y exportaciones (Alimentos y Bebidas, Automotriz, Químicos), un caso de uso intensivo de capacidad con fuerte aporte exportador pero límite físico de producción (Refinación de Petróleo), y un grupo de ramas rezagadas con registros bajos en todas las variables (Textiles, Tabaco, Caucho y Plástico).
 
 ---
 
