@@ -1,8 +1,29 @@
-# Inteligencia de Datos para la Reconfiguración Industrial Argentina
-### Eficiencia productiva y perfiles sectoriales en la industria manufacturera · 2021–2026
+<div align="center">
 
-Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial  
-Politécnico Malvinas Argentinas — Práctica Profesionalizante I · 1C 2026
+<img src="assets/portada.png" alt="Inteligencia de Datos para la Reconfiguración Industrial Argentina" width="100%">
+
+<h1>Inteligencia de Datos para la Reconfiguración Industrial Argentina</h1>
+
+<p><strong>Eficiencia productiva y perfiles sectoriales en la industria manufacturera · 2021–2026</strong></p>
+
+<p>
+Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial<br>
+Politécnico Malvinas Argentinas — Práctica Profesionalizante I · 1.<sup>er</sup> Cuatrimestre 2026
+</p>
+
+<p>
+<a href="https://drive.google.com/file/d/11bICz3zygWCJwADbQUcbw9rP9vB-IerD/view?usp=sharing"><img src="https://img.shields.io/badge/Ver%20video%20de%20presentaci%C3%B3n-FF0000?style=for-the-badge&logo=googledrive&logoColor=white" alt="Ver video de presentación"></a>
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI">
+<img src="https://img.shields.io/badge/Fuente-INDEC-1F6FEB?style=flat-square" alt="Fuente INDEC">
+<img src="https://img.shields.io/badge/Per%C3%ADodo-2021--2026-555?style=flat-square" alt="Período 2021-2026">
+<img src="https://img.shields.io/badge/Sectores%20analizados-9-success?style=flat-square" alt="9 sectores analizados">
+<img src="https://img.shields.io/badge/Estado-Finalizado-brightgreen?style=flat-square" alt="Estado finalizado">
+</p>
+
+</div>
 
 ---
 
@@ -14,6 +35,8 @@ Politécnico Malvinas Argentinas — Práctica Profesionalizante I · 1C 2026
 - Iñigo, Liliana
 - Roa Gunn, Tomás
 
+**Docentes:** Martín Mirabete · Silvana Páez Jiménez · Federico Magaldi *(coordinador de la Práctica Profesionalizante)*
+
 ---
 
 ## Descripción del proyecto
@@ -21,6 +44,16 @@ Politécnico Malvinas Argentinas — Práctica Profesionalizante I · 1C 2026
 La industria manufacturera argentina atraviesa una reconfiguración estructural posterior a la pandemia, marcada por una fuerte heterogeneidad: algunos sectores operan cerca de su capacidad máxima mientras otros tienen más del 40% de su infraestructura sin usar. Este proyecto aplica inteligencia de datos sobre registros oficiales del INDEC —el Índice de Producción Industrial (IPI) y la Utilización de la Capacidad Instalada Industrial (UCII)— para diagnosticar esa heterogeneidad en el período 2021–2026 y aportar evidencia empírica para la reconfiguración del sector.
 
 El objetivo es identificar y caracterizar perfiles de eficiencia sectorial cruzando producción (IPI), uso de capacidad (UCII) y exportaciones. Del análisis emergen tres perfiles: un bloque motor de alta producción y exportaciones (Alimentos y Bebidas, Automotriz, Químicos), un caso de uso intensivo de capacidad con fuerte aporte exportador pero límite físico de producción (Refinación de Petróleo), y un grupo de ramas rezagadas con registros bajos en todas las variables (Textiles, Tabaco, Caucho y Plástico).
+
+---
+
+## 🎥 Video de presentación
+
+Presentación académica del proyecto (Sprint 3), donde el equipo recorre el problema, el análisis y el dashboard final.
+
+▶️ **[Ver el video de presentación](https://drive.google.com/file/d/11bICz3zygWCJwADbQUcbw9rP9vB-IerD/view?usp=sharing)**
+
+> El video (≈ 288 MB) se aloja en Google Drive por superar el límite de tamaño de GitHub.
 
 ---
 
@@ -91,7 +124,34 @@ Se consolidan los insights y las visualizaciones en el dashboard final de Power 
 - **Sustancias y Productos Químicos** y **Automotriz** funcionan como motores secundarios de alta eficiencia y con un aporte exportador robusto.
 - **Refinación de Petróleo** registra la **UCII más alta del panel (≈ 78,39%)** y crecimiento sostenido post-2024, pero baja eficiencia técnica: al operar al límite de su capacidad, requeriría inversión en ampliación para crecer en producción.
 - **Productos Textiles**, **Tabaco** y **Caucho y Plástico** son los sectores rezagados, con los valores más bajos en producción, capacidad utilizada y exportaciones.
-- En **2024** se produce una caída generalizada del IPI y la UCII tras el pico de 2022–2023, con recuperación dispar entre sectores.
+- Entre **2023 y 2024** la industria sufrió una recesión generalizada: el IPI promedio cayó con fuerza en **Caucho y Plástico (−18 %)**, **Textil (−17 %)** y **Automotriz (−11 %)**, tras el pico de 2022–2023 y con recuperación dispar entre sectores.
+
+---
+
+## 🔑 Hallazgos clave
+
+Tres hallazgos sintetizan el análisis (son los que estructuran el video de presentación).
+
+**Contexto — la recesión 2023–2024.** En ese bienio la industria sufrió una contracción generalizada del IPI: **Caucho y Plástico −18 %**, **Textil −17 %** y **Automotriz −11 %**.
+
+### 🛢️ Hallazgo 1 — Un único sector inmune a la caída
+**Refinación de Petróleo** fue el único rubro que no solo resistió, sino que *creció* (**+2 % de IPI**) mientras el resto del aparato productivo se contraía. El sector energético tiene dinámicas de demanda propias, capaces de aislarse de las crisis del consumo interno.
+
+### 🏭 Hallazgo 2 — Tres perfiles industriales
+Cruzando producción, uso de capacidad y exportaciones emergen tres perfiles bien diferenciados:
+
+| Perfil | Sectores | IPI | UCII | Exportaciones |
+|---|---|:---:|:---:|:---:|
+| **Sectores motores** | Alimentos y Bebidas · Automotriz · Productos Químicos | Alto | Media | Fuertes a moderadas |
+| **La excepción energética** | Refinación de Petróleo | Estable | Máxima (techo técnico) | Importantes |
+| **Sectores rezagados** | Textil · Tabaco · Caucho y Plástico | Bajo | Baja | Muy bajas |
+
+### 🚀 Hallazgo 3 — Potencialidad de cada sector
+Con una nueva variable, la **eficiencia productiva (IPI / UCII)**, cruzada con las exportaciones, se proyecta el potencial de cada perfil:
+
+- **Motores potenciales:** alto potencial de crecimiento productivo y exportador.
+- **Disociación operativa (Refinación de Petróleo):** produce al máximo de su capacidad; no puede crecer sin fuertes inversiones de infraestructura, pero sostiene exportaciones clave.
+- **Sectores rezagados:** sin proyección de crecimiento inmediata; requieren medidas específicas para revertir su rezago.
 
 ---
 
@@ -122,6 +182,22 @@ Gráfico combinado (columnas agrupadas de eficiencia + línea de exportaciones).
 
 ---
 
+## Dashboard final (Sprint 3)
+
+El cierre del proyecto se materializa en un dashboard interactivo de Power BI (`analysis/pbix/SPRINT 3.pbix`) que integra las tres preguntas de análisis en páginas navegables. El paso a paso para usarlo está en `docs/Manual_Usuario_Dashboard_Sprint3.docx`.
+
+| Página de inicio | Evolución del IPI |
+|---|---|
+| ![Inicio del dashboard](docs/capturas/dashboard_sprint_3/inicio.png) | ![Evolución del IPI](docs/capturas/dashboard_sprint_3/evolucion_ipi.png) |
+
+| Eficiencia sectorial | Perfiles sectoriales |
+|---|---|
+| ![Eficiencia sectorial](docs/capturas/dashboard_sprint_3/eficiencia_sectorial.png) | ![Perfiles sectoriales](docs/capturas/dashboard_sprint_3/perfiles_sectoriales.png) |
+
+> El resto de las capturas y las animaciones del recorrido están en `docs/capturas/dashboard_sprint_3/`.
+
+---
+
 ## Conclusiones
 
 Los datos del INDEC confirman una industria manufacturera **heterogénea y polarizada**. **Alimentos y Bebidas** lidera la estructura como el bloque más resiliente, eficiente y generador de divisas; **Químicos** y **Automotriz** operan como motores industriales secundarios de alta eficiencia. En el extremo opuesto, las ramas ligadas al consumo interno (**Textil, Tabaco, Caucho y Plástico**) muestran un estancamiento crítico generalizado en producción, uso de capacidad e inserción externa entre 2021 y 2026.
@@ -130,12 +206,16 @@ Los datos del INDEC confirman una industria manufacturera **heterogénea y polar
 
 El Sprint 3 consolida estos hallazgos en el informe técnico final y el dashboard, y deja el repositorio con la estructura definitiva del proyecto.
 
+<p align="center"><em>"Los datos no solo cuentan lo que pasó — nos muestran hacia dónde ir."</em></p>
+
 ---
 
 ## Estructura del repositorio
 
 ```
 ├── README.md
+├── assets/
+│   └── portada.png       ← imagen de portada del proyecto
 ├── data/
 │   ├── raw/              ← datasets originales (INDEC: IPI, UCII, exportaciones)
 │   └── processed/        ← datos transformados exportados desde Power Query
@@ -143,9 +223,11 @@ El Sprint 3 consolida estos hallazgos en el informe técnico final y el dashboar
 │   └── pbix/             ← archivos .pbix con el modelo y las visualizaciones
 ├── docs/
 │   ├── capturas/         ← imágenes de los gráficos
+│   │   └── dashboard_sprint_3/   ← capturas y animaciones del dashboard final
 │   ├── etl/              ← controles de limpieza y registro de errores
 │   ├── organizacion/     ← gantt, roles y minutas por sprint
 │   ├── Diccionario de Datos.docx
+│   ├── Manual_Usuario_Dashboard_Sprint3.docx   ← manual de uso del dashboard
 │   ├── PP1-PLA-S1-DiccionarioDatos Equipo 3.xlsx   ← diccionario de datos final
 │   └── Criterios para la NORMALIZACIÓN DE INDUSTRIAS POR SECTOR.xlsx
 └── reports/             ← informes técnicos y entregables por sprint
@@ -155,3 +237,13 @@ El Sprint 3 consolida estos hallazgos en el informe técnico final y el dashboar
 ```
 
 > Los archivos de mayor tamaño (.pbix, .xls) se mantienen también en Google Drive como respaldo principal.
+
+---
+
+<div align="center">
+
+**Equipo N.º 3** · Bacchiani · Frías · Gaitán · Iñigo · Roa Gunn
+<br>
+Politécnico Malvinas Argentinas · Tecnicatura en Ciencia de Datos e Inteligencia Artificial · 2026
+
+</div>
