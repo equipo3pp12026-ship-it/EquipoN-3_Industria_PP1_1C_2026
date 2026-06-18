@@ -169,7 +169,7 @@ Gráfico de líneas de la evolución temporal del IPI por sector.
 ### Pregunta 2 — Perfiles productivos (IPI × UCII × exportaciones)
 Distribución bivariada y segmentación de los sectores según producción, uso de capacidad y exportaciones.
 
-![Perfiles IPI x UCII x exportaciones](docs/capturas/P2_perfiles_ipi_ucii_exportaciones.png)
+![Perfiles IPI x UCII x exportaciones](docs/capturas/P2_perfiles_ipi_ucii_exportaciones.gif)
 
 **Qué se observa:** emergen tres perfiles. (1) Alta producción, capacidad media-alta (UCII 50–70%) y exportaciones fuertes a moderadas: *Alimentos y Bebidas, Automotriz, Productos Químicos*. (2) Uso intensivo de capacidad con buenas exportaciones: *Refinación de Petróleo* (UCII máxima del panel). (3) Sectores rezagados con valores bajos en todas las variables, agrupados en el cuadrante inferior izquierdo: *Productos Textiles, Tabaco y Caucho y Plástico*.
 
@@ -188,11 +188,11 @@ El cierre del proyecto se materializa en un dashboard interactivo de Power BI (`
 
 | Página de inicio | Evolución del IPI |
 |---|---|
-| ![Inicio del dashboard](docs/capturas/dashboard_sprint_3/inicio.png) | ![Evolución del IPI](docs/capturas/dashboard_sprint_3/evolucion_ipi.png) |
+| ![Inicio del dashboard](docs/capturas/dashboard_sprint_3/inicio.png) | ![Evolución del IPI](docs/capturas/dashboard_sprint_3/evolucion_ipi_por_anio.png) |
 
 | Eficiencia sectorial | Perfiles sectoriales |
 |---|---|
-| ![Eficiencia sectorial](docs/capturas/dashboard_sprint_3/eficiencia_sectorial.png) | ![Perfiles sectoriales](docs/capturas/dashboard_sprint_3/perfiles_sectoriales.png) |
+| ![Eficiencia sectorial](docs/capturas/dashboard_sprint_3/P3_eficiencia_ipi_ucii_exportaciones.png) | ![Perfiles sectoriales](docs/capturas/dashboard_sprint_3/perfiles_sectoriales.png) |
 
 > El resto de las capturas y las animaciones del recorrido están en `docs/capturas/dashboard_sprint_3/`.
 
