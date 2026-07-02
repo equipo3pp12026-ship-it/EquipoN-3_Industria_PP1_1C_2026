@@ -12,7 +12,8 @@ Politécnico Malvinas Argentinas — Práctica Profesionalizante I · 1.<sup>er<
 </p>
 
 <p>
-<a href="https://drive.google.com/file/d/11bICz3zygWCJwADbQUcbw9rP9vB-IerD/view?usp=sharing"><img src="https://img.shields.io/badge/Ver%20video%20de%20presentaci%C3%B3n-FF0000?style=for-the-badge&logo=googledrive&logoColor=white" alt="Ver video de presentación"></a>
+<a href="https://www.youtube.com/live/0BjEb96suDU"><img src="https://img.shields.io/badge/Ver%20presentaci%C3%B3n%20final%20en%20YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Ver presentación final en YouTube"></a>
+<a href="https://drive.google.com/file/d/11bICz3zygWCJwADbQUcbw9rP9vB-IerD/view?usp=sharing"><img src="https://img.shields.io/badge/Copia%20en%20Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Copia del video en Google Drive"></a>
 </p>
 
 <p>
@@ -49,11 +50,11 @@ El objetivo es identificar y caracterizar perfiles de eficiencia sectorial cruza
 
 ## 🎥 Video de presentación
 
-Presentación académica del proyecto (Sprint 3), donde el equipo recorre el problema, el análisis y el dashboard final.
+Presentación académica del proyecto (Sprint 3), transmitida en vivo al público y grabada, donde el equipo recorre el problema, el análisis y el dashboard final.
 
-▶️ **[Ver el video de presentación](https://drive.google.com/file/d/11bICz3zygWCJwADbQUcbw9rP9vB-IerD/view?usp=sharing)**
+▶️ **[Ver la presentación final en YouTube](https://www.youtube.com/live/0BjEb96suDU)** *(transmisión pública grabada)*
 
-> El video (≈ 288 MB) se aloja en Google Drive por superar el límite de tamaño de GitHub.
+📁 **[Copia de respaldo en Google Drive](https://drive.google.com/file/d/11bICz3zygWCJwADbQUcbw9rP9vB-IerD/view?usp=sharing)** *(≈ 288 MB; se aloja en Drive por superar el límite de tamaño de GitHub)*
 
 ---
 
