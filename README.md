@@ -43,7 +43,7 @@ Politécnico Malvinas Argentinas — Práctica Profesionalizante I · 1.<sup>er<
 
 La industria manufacturera argentina atraviesa una reconfiguración estructural posterior a la pandemia, marcada por una fuerte heterogeneidad: algunos sectores operan cerca de su capacidad máxima mientras otros tienen más del 40% de su infraestructura sin usar. Este proyecto aplica inteligencia de datos sobre registros oficiales del INDEC —el Índice de Producción Industrial (IPI) y la Utilización de la Capacidad Instalada Industrial (UCII)— para diagnosticar esa heterogeneidad en el período 2021–2026 y aportar evidencia empírica para la reconfiguración del sector.
 
-El objetivo es identificar y caracterizar perfiles de eficiencia sectorial cruzando producción (IPI), uso de capacidad (UCII) y exportaciones. Del análisis emergen tres perfiles: un bloque motor de alta producción y exportaciones (Alimentos y Bebidas, Automotriz, Químicos), un caso de uso intensivo de capacidad con fuerte aporte exportador pero límite físico de producción (Refinación de Petróleo), y un grupo de ramas rezagadas con registros bajos en todas las variables (Textiles, Tabaco, Caucho y Plástico).
+El objetivo es identificar y caracterizar perfiles de eficiencia sectorial cruzando producción (IPI), uso de capacidad (UCII) y exportaciones. Del análisis emergen tres perfiles: un bloque con potencialidad de crecimiento, de alta producción y exportaciones fuertes a moderadas (Alimentos y Bebidas, Automotriz, Químicos), un caso de uso intensivo de capacidad que exporta pero opera al límite de su producción (Refinación de Petróleo), y un grupo de ramas rezagadas con registros bajos de producción y uso de capacidad (Textiles, Tabaco, Caucho y Plástico).
 
 ---
 
@@ -106,7 +106,7 @@ El análisis se estructura en torno a tres preguntas centrales (ver `reports/spr
 Se analizó la estructura de los datasets: filas, columnas, tipos de dato, valores nulos y problemas de formato. El IPI tiene ~85 subclases CLaNAE y la UCII reporta 12 bloques sectoriales, por lo que no hay correspondencia directa 1 a 1 entre ambos. Se construyó una tabla de equivalencias para normalizar los nombres entre los tres datasets y trabajar con 9 sectores comparables.
 
 **Limpieza y normalización (Sprint 2)**  
-Se procesaron los dos datasets principales en Power Query: se resolvió el encabezado de dos niveles del IPI, se completó el campo año (que venía vacío en los meses que no eran enero), se marcaron los datos provisionales de los últimos meses y se homogeneizaron los nombres de sectores. El dataset de exportaciones se está incorporando en esta misma etapa.
+Se procesaron los dos datasets principales en Power Query: se resolvió el encabezado de dos niveles del IPI, se completó el campo año (que venía vacío en los meses que no eran enero), se marcaron los datos provisionales de los últimos meses y se homogeneizaron los nombres de sectores. El dataset de exportaciones se incorporó en esta misma etapa.
 
 **Visualizaciones**  
 Se desarrollaron en Power BI: scatter de posicionamiento sectorial (IPI vs UCII), gráfico de barras apiladas de capacidad utilizada vs ociosa, y líneas de evolución temporal por sector.
@@ -120,11 +120,11 @@ Se consolidan los insights y las visualizaciones en el dashboard final de Power 
 
 - El promedio de utilización de capacidad instalada de la industria en el período es de ≈ **61,5%**, lo que implica cerca de un **38,5% de capacidad ociosa** promedio.
 - La industria muestra un perfil **heterogéneo y polarizado**: sectores líderes claramente diferenciados de un grupo de ramas rezagadas.
-- **Alimentos y Bebidas** es el sector preponderante: el más resiliente ante la caída de 2024, el de mayor eficiencia productiva relativa y el principal generador de divisas.
-- **Sustancias y Productos Químicos** y **Automotriz** funcionan como motores secundarios de alta eficiencia y con un aporte exportador robusto.
-- **Refinación de Petróleo** registra la **UCII más alta del panel (≈ 78,39%)** y crecimiento sostenido post-2024, pero baja eficiencia técnica: al operar al límite de su capacidad, requeriría inversión en ampliación para crecer en producción.
-- **Productos Textiles**, **Tabaco** y **Caucho y Plástico** son los sectores rezagados, con los valores más bajos en producción, capacidad utilizada y exportaciones.
-- Entre **2023 y 2024** la industria sufrió una recesión generalizada: el IPI promedio cayó con fuerza en **Caucho y Plástico (−18 %)**, **Textil (−17 %)** y **Automotriz (−11 %)**, tras el pico de 2022–2023 y con recuperación dispar entre sectores.
+- **Alimentos y Bebidas** es el sector preponderante: el más resiliente ante la caída de 2023–2024 (variación del IPI de −1%, la menor del panel), el principal exportador y con eficiencia IPI/UCII alta (2,32).
+- **Automotriz** registra la **mayor eficiencia IPI/UCII del panel (2,9)**, con exportaciones moderadas; **Sustancias y Productos Químicos** combina eficiencia alta (2,10) con exportaciones moderadas.
+- **Refinación de Petróleo** registra la **UCII más alta del panel (≈ 78,39%)** y fue el único sector con variación positiva del IPI entre 2023 y 2024 (+2%), pero presenta una de las eficiencias IPI/UCII más bajas (1,44): opera cerca del techo de su capacidad instalada.
+- **Productos Textiles**, **Tabaco** y **Caucho y Plástico** son los sectores rezagados, con las UCII más bajas del panel y registros bajos de IPI y exportaciones.
+- Entre **2023 y 2024** se produce una caída generalizada del IPI: 8 de los 9 sectores retrocedieron, con las mayores bajas en **Productos Minerales no Metálicos (−25 %)**, **Caucho y Plástico (−18 %)**, **Industrias Metálicas Básicas (−18 %)** y **Textil (−17 %)**, y recuperación dispar entre sectores.
 
 ---
 
@@ -132,10 +132,10 @@ Se consolidan los insights y las visualizaciones en el dashboard final de Power 
 
 Tres hallazgos sintetizan el análisis (son los que estructuran el video de presentación).
 
-**Contexto — la recesión 2023–2024.** En ese bienio la industria sufrió una contracción generalizada del IPI: **Caucho y Plástico −18 %**, **Textil −17 %** y **Automotriz −11 %**.
+**Contexto — la recesión 2023–2024.** En ese bienio la industria sufrió una contracción generalizada del IPI: 8 de los 9 sectores retrocedieron, entre ellos **Caucho y Plástico −18 %**, **Textil −17 %** y **Automotriz −11 %**.
 
 ### 🛢️ Hallazgo 1 — Un único sector inmune a la caída
-**Refinación de Petróleo** fue el único rubro que no solo resistió, sino que *creció* (**+2 % de IPI**) mientras el resto del aparato productivo se contraía. El sector energético tiene dinámicas de demanda propias, capaces de aislarse de las crisis del consumo interno.
+**Refinación de Petróleo** fue el único rubro que no solo resistió, sino que *creció* (**+2 % de IPI**) mientras el resto del aparato productivo se contraía. Es, además, el sector que opera con la UCII más alta del panel (≈ 78,39 %).
 
 ### 🏭 Hallazgo 2 — Tres perfiles industriales
 Cruzando producción, uso de capacidad y exportaciones emergen tres perfiles bien diferenciados:
@@ -143,15 +143,15 @@ Cruzando producción, uso de capacidad y exportaciones emergen tres perfiles bie
 | Perfil | Sectores | IPI | UCII | Exportaciones |
 |---|---|:---:|:---:|:---:|
 | **Sectores motores** | Alimentos y Bebidas · Automotriz · Productos Químicos | Alto | Media | Fuertes a moderadas |
-| **La excepción energética** | Refinación de Petróleo | Estable | Máxima (techo técnico) | Importantes |
+| **La excepción energética** | Refinación de Petróleo | En alza | Máxima (techo técnico) | Moderadas |
 | **Sectores rezagados** | Textil · Tabaco · Caucho y Plástico | Bajo | Baja | Muy bajas |
 
 ### 🚀 Hallazgo 3 — Potencialidad de cada sector
-Con una nueva variable, la **eficiencia productiva (IPI / UCII)**, cruzada con las exportaciones, se proyecta el potencial de cada perfil:
+Con una nueva variable, la **eficiencia productiva (IPI / UCII)**, cruzada con las exportaciones, se caracteriza el potencial de cada perfil:
 
-- **Motores potenciales:** alto potencial de crecimiento productivo y exportador.
-- **Disociación operativa (Refinación de Petróleo):** produce al máximo de su capacidad; no puede crecer sin fuertes inversiones de infraestructura, pero sostiene exportaciones clave.
-- **Sectores rezagados:** sin proyección de crecimiento inmediata; requieren medidas específicas para revertir su rezago.
+- **Motores potenciales:** eficiencia alta y exportaciones relevantes; son los sectores con mayor margen de crecimiento según los datos.
+- **Disociación operativa (Refinación de Petróleo):** produce al máximo de su capacidad instalada, sin margen para aumentar la producción con la infraestructura actual, y sostiene sus exportaciones.
+- **Sectores rezagados:** sin proyección de crecimiento en el período analizado, con eficiencia baja y participación exportadora marginal.
 
 ---
 
@@ -164,21 +164,21 @@ Gráfico de líneas de la evolución temporal del IPI por sector.
 
 ![Evolución del IPI 2021-2026](docs/capturas/P1_evolucion_ipi_2021_2026.png)
 
-**Qué se observa:** crecimiento desde 2021 hasta un pico en 2022–2023 y una caída generalizada en 2024. *Alimentos y Bebidas* se mantiene alto y estable (mayor resiliencia); *Automotriz* cae con fuerza en 2024 sin recuperación visible; *Textiles* e *Industrias Metálicas Básicas* muestran caída pronunciada con recuperación parcial; *Refinación de Petróleo* es la única excepción, con crecimiento sostenido hacia 2026.
+**Qué se observa:** una caída generalizada del IPI entre 2023 y 2024: 8 de los 9 sectores retrocedieron. *Alimentos y Bebidas* se mantiene alto y estable (variación de −1%, la menor del panel); *Automotriz* cae en 2024 y no se recupera hacia 2026; *Productos Textiles* desciende de forma continua durante todo el período; *Industrias Metálicas Básicas* cae con fuerza y recupera solo parcialmente; *Refinación de Petróleo* es la única excepción, con crecimiento positivo (+2% entre 2023 y 2024) y tendencia ascendente hacia 2026.
 
 ### Pregunta 2 — Perfiles productivos (IPI × UCII × exportaciones)
 Distribución bivariada y segmentación de los sectores según producción, uso de capacidad y exportaciones.
 
 ![Perfiles IPI x UCII x exportaciones](docs/capturas/P2_perfiles_ipi_ucii_exportaciones.gif)
 
-**Qué se observa:** emergen tres perfiles. (1) Alta producción, capacidad media-alta (UCII 50–70%) y exportaciones fuertes a moderadas: *Alimentos y Bebidas, Automotriz, Productos Químicos*. (2) Uso intensivo de capacidad con buenas exportaciones: *Refinación de Petróleo* (UCII máxima del panel). (3) Sectores rezagados con valores bajos en todas las variables, agrupados en el cuadrante inferior izquierdo: *Productos Textiles, Tabaco y Caucho y Plástico*.
+**Qué se observa:** emergen tres perfiles. (1) *Con potencialidad de crecimiento* — IPI alto, UCII media y exportaciones fuertes a moderadas: *Alimentos y Bebidas, Automotriz y Productos Químicos*. (2) *Desacople operativo* — *Refinación de Petróleo*: exporta, pero registra la UCII máxima del panel y opera al límite de su capacidad. (3) *Rezagado* — IPI y UCII bajos, sin proyección de crecimiento en el período: *Productos Textiles, Tabaco, Caucho y Plástico e Industrias Metálicas Básicas*.
 
 ### Pregunta 3 — Eficiencia productiva (IPI/UCII) y exportaciones
 Gráfico combinado (columnas agrupadas de eficiencia + línea de exportaciones).
 
 ![Eficiencia IPI/UCII y exportaciones](docs/capturas/P3_eficiencia_ipi_ucii_exportaciones.png)
 
-**Qué se observa:** *Alimentos y Bebidas* lidera, con la mayor eficiencia relativa y el mayor nivel de exportaciones. *Sustancias y Productos Químicos* y *Automotriz* aparecen como motores secundarios, altamente competitivos. *Refinación de Petróleo* es un caso de desconexión: buen desempeño exportador pero baja eficiencia técnica, porque consume casi toda su capacidad instalada (UCII ≈ 78,39%). *Textiles, Tabaco y Caucho y Plástico* quedan en los últimos lugares en eficiencia y con participación marginal en el comercio exterior.
+**Qué se observa:** *Automotriz* registra la mayor eficiencia IPI/UCII del panel (2,9), con exportaciones moderadas. *Alimentos y Bebidas* es el líder exportador por amplio margen y sostiene una eficiencia alta (2,32). *Refinación de Petróleo* presenta una de las eficiencias más bajas (1,44) porque consume casi toda su capacidad instalada (UCII ≈ 78,39%). Los últimos lugares en eficiencia corresponden a *Industrias Metálicas Básicas* (1,33), *Refinación de Petróleo* (1,44) y *Productos de Tabaco* (1,47); los sectores rezagados muestran además una participación marginal en las exportaciones.
 
 ---
 
@@ -200,9 +200,9 @@ El cierre del proyecto se materializa en un dashboard interactivo de Power BI (`
 
 ## Conclusiones
 
-Los datos del INDEC confirman una industria manufacturera **heterogénea y polarizada**. **Alimentos y Bebidas** lidera la estructura como el bloque más resiliente, eficiente y generador de divisas; **Químicos** y **Automotriz** operan como motores industriales secundarios de alta eficiencia. En el extremo opuesto, las ramas ligadas al consumo interno (**Textil, Tabaco, Caucho y Plástico**) muestran un estancamiento crítico generalizado en producción, uso de capacidad e inserción externa entre 2021 y 2026.
+Los datos del INDEC muestran una industria manufacturera **heterogénea y polarizada**. **Alimentos y Bebidas** es el sector más resiliente ante la caída de 2023–2024 y el principal exportador del panel; **Automotriz** registra la mayor eficiencia IPI/UCII (2,9) y **Químicos** combina eficiencia alta con exportaciones moderadas. En el extremo opuesto, **Textil, Tabaco y Caucho y Plástico** presentan los registros más bajos de IPI y UCII del período 2021–2026, sin señales de recuperación en los datos.
 
-**Refinación de Petróleo** cumple un rol clave pero atípico: no como motor flexible de alta producción, sino como estabilizador de energía y divisas. Su baja eficiencia técnica se explica porque consume casi toda su capacidad instalada (UCII máxima del panel, 78,39%); para aumentar su producción física necesitaría inversiones de ampliación en sus plantas.
+**Refinación de Petróleo** es el caso atípico del panel: fue el único sector con variación positiva del IPI entre 2023 y 2024 (+2%) y registra la UCII más alta (78,39%), pero una de las eficiencias IPI/UCII más bajas (1,44). El indicador refleja que opera cerca del techo de su capacidad instalada, lo que limita el margen de crecimiento de su producción con la capacidad actual.
 
 El Sprint 3 consolida estos hallazgos en el informe técnico final y el dashboard, y deja el repositorio con la estructura definitiva del proyecto.
 
